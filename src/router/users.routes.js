@@ -1,4 +1,4 @@
-import { Layout, List, AddEdit } from '@/view/users'
+import { Layout, List, AddEdit } from '@/views/users'
 
 export default {
     path : '/users',
