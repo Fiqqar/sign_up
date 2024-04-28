@@ -17,7 +17,7 @@
         try {
             await userStore.register(values)
             await router.push("/account/login")
-            alertStore.success(Register successful);
+            alertStore.success('Register successful');
         } catch (error) {
             alertStore.error(error);
         }

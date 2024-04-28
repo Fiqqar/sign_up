@@ -29,8 +29,8 @@ const schema = Yup.object().shape({
                     </div>
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-primary" :disabled="isSubmitting"><span v-show="isSubmitting" class="spinner-border spinner-border-sm mr-1"></span>Register</button>
-                <router-link class="btn-link btn" to="Login">Cancel</router-link>
+                    <button class="btn btn-primary" :disabled="isSubmitting"><span v-show="isSubmitting" class="spinner-border spinner-border-sm mr-1"></span>Login</button>
+                <router-link class="btn-link btn" to="Register">Register</router-link>
                 </div>
             </Form>
 
