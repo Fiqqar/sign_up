@@ -5,7 +5,7 @@ export default {
     component: Layout,
     children: [
         {path: '', component: List},
-        {path: 'Add', component: AddEdit},
-        {path: 'Edit/:id', component: AddEdit}
+        {path: 'add', component: AddEdit},
+        {path: 'edit/:id', component: AddEdit}
     ]
 }

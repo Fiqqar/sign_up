@@ -8,6 +8,11 @@ const schema = Yup.object().shape({
         username: Yup.string().required("Username Required"),
         password: Yup.string().required("Password Required")
     });
+async function onSubmit(values) {
+    const authStore = useAuthStore();
+    const { username, password } = values;
+    await authStore.login(username, password);
+}
 </script>
 <template>
     <div class="card m-3">

@@ -4,8 +4,7 @@ export default {
     path : '/account',
     component: Layout,
     children: [
-        {path: '', redirect: Login},
-        {path: 'Login', component: Login},
-        {path: 'Register', component: Register}
+        {path: 'login', component: Login},
+        {path: 'register', component: Register}
     ]
 }

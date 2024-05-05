@@ -1,4 +1,5 @@
 <script setup>
+    import { RouterLink, RouterView } from 'vue-router';
     import {Nav, Alert} from '@/components/'
     import { useAuthStore } from './stores/auth.store';
     const authStore = useAuthStore();
@@ -6,10 +7,10 @@
 
 <template>
     <div class="app-container" :class="authStore.user && 'bg-light'">
-        <Nav></Nav>
+        <Nav/>
         <Alert/>
         <div class="container pt-4 pb-4">
-            <router-view></router-view>
+            <RouterView/>
         </div>
     </div>
 </template>

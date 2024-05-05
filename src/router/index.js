@@ -9,9 +9,9 @@ export const router = createRouter({
     linkActiveClass: "active",
     routes: [
         {path: "/", component: Home},
-        {accountRoutes},
-        {usersRoutes},
-        {path : "/:pathMatch(.*)*",}  // catch all redirects to home page
+        {...accountRoutes},
+        {...usersRoutes},
+        {path : "/:pathMatch(.*)*", redirect: "/"}  // catch all redirects to home page
     ]
 });
 
