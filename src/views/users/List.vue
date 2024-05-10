@@ -1,3 +1,11 @@
+<script setup>
+import { storeToRefs } from 'pinia';
+import { useUsersStore } from '@/stores';
+const usersStore = useUsersStore();
+const {users} = storeToRefs(usersStore);
+usersStore.getAll();
+</script>
+
 <template>
     <h1>Users</h1>
     <router-link to="/users/add" class="btn btn-sm btn-succes mb-2" >Add user</router-link>
@@ -36,10 +44,3 @@
         </tbody>
     </table>
 </template>
-<script setup>
-import { storeToRefs } from 'pinia';
-import { useUsersStore } from '@/stores/users.store';
-const userStore = useUsersStore();
-const {user} = storeToRefs(userStore);
-userStore.getAll();
-</script>

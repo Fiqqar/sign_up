@@ -1,6 +1,6 @@
 export { fakeBackEnd };
-const userKey = "Login-129078";
-let users = JSON.parse(localStorage.getItem(userKey)) || [];
+const usersKey = "Login-129078";
+let users = JSON.parse(localStorage.getItem(usersKey)) || [];
 
 function fakeBackEnd() {
     let realFetch = window.fetch;
